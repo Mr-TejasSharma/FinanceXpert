@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),#502274);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light-purple);
+    height: 100vh;
+    overflow: hidden;
+}
+.form{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.Card1{
+    background-color: var(--light-purple);
+    border-radius:20px 0px 0px 20px;
+    color: var(--light-yellow);
+    justify-content: center;
+    height: 80vh;
+    width: 40vw;
+    text-align: center;
+}
+.gap{
+    background-image: linear-gradient( to right,#502274,white );
+    width: 1vw;
+    height: 80vh;
+}
+.Card2{
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    height: 80vh;
+    width: 40vw;
+    text-align: center;
+}
+.signin,.signin_form,.signup,.forgot,.otp
+{
+    padding: 30% 10%;
+}
+.signup_form{
+    padding: 20% 10%;
+}
+.signin_form{
+    color:var(--light-purple);   
+}
+form>div{
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+input{
+    font-size: 2.5vh;
+    max-width: 50vw;
+    outline: none;
+    border: none;
+}
+.backicon{
+    position:fixed;
+    top: 11vh;
+    right: 11vw;
+    height: 4vh;
+}
+.mailicon{
+    margin-top: 5vh;
+    position: relative;
+    top: 1vh;
+    height: 3vh;
+}
+.usernameicon{
+    position: relative;
+    padding:0vh 1vh;
+    top: 1vh;
+    height: 4vh;
+}
+.lockicon{
+    position: relative;
+    top: 1vh;
+    padding: 0vh 1vh;
+    height: 4vh;
+}
+/* .eyeicon{ 
+    position: relative;
+    right: 0vw;
+    height: 2.5vh;
+} */
+button{
+    padding: 5px;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    background-color: var(--light-purple);
+    color:var(--light-yellow);
+    margin-top: 2vh;
+    margin-left:10vw;
+    cursor: pointer;
+}
+.button{
+    width: 20vw;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+button:hover{
+    font-size: 2.7vh;
+    box-shadow: 3px 3px 5px 0px #502274;
+}
+.footer{
+    padding: 2vh;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    margin-right: 0vw;
+    color: var(--light-purple);
+    text-decoration: none;
+    cursor: pointer;
+}
+span{
+    cursor: pointer;
+}
+.signin,.signin_form{
+    display: block;
+}
+.signup,.signup_form{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .form{
+        flex-direction: column;
+    }
+    .Card1,.Card2{
+        height: 45vh;
+        width: 80vw;
+    }
+    .Card1{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .Card2{
+        border-radius: 0px 0px 20px 20px;
+    }
+    
+    .gap{
+        background-image: linear-gradient( to bottom,#502274,white );
+        width: 80vw;
+        height: 1vh;
+    }
+    .signin,.signin_form,.signup,.signup_form,.forgot,.otp{
+        padding: 5%;
+    }
+    .mailicon{
+        margin-top: 0vh;
+    }
+    button{
+        margin-left: 30vw;
+    }
+    .button{
+        width: 35vw;
+        font-size: 1.5vh;
+    }
+    a{
+        margin-right: 3vw;
+    }
+    .backicon{
+        top:51vh;
+    }
+}
