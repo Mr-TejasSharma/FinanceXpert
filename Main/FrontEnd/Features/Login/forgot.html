@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Assets/Home_Page/Icons/Fab-Icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/Colors/colors.css">
-    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../Colors/colors.css">
+    <link rel="stylesheet" href="./login.css">
     <title>Authentication</title>
 </head>
 <body>
@@ -22,16 +22,16 @@
 
         <div class="Card2">
             <div class="forgot">
-                <a href="../HTML/login.html"><img src="../Assets/Authentication_Page/Back_icon.png" class="backicon"></a>
+                <a href=".login.html" title="Back"><img src="../Assets/Authentication_Page/Back_icon.png" class="backicon"></a>
                 <h1>Reset Password</h1>
-                <form action="../HTML/otp.html">
+                <form action="./otp.html">
                     <div>
                         <img src="../Assets/Authentication_Page/Mail_Icon.png" class="mailicon">
-                        <input type="email" class="signin_mail" placeholder="Enter Your E-mail">
+                        <input type="email" class="signin_mail" title="Enter Your Email" placeholder="Enter Your E-mail">
                     </div><br>
                     <div>
                         <img src="../Assets/Authentication_Page/Password_Icon.png" class="lockicon">
-                        <input type="password" class="signin_password" placeholder="Create Password">
+                        <input type="password" class="signin_password" title="Please Create 8 to 14 Digit Password" placeholder="Create Your Password">
                         <!-- <img src="../Assets/Authentication_Page/Eye_Icon.png" class="eyeicon"> -->
                     </div>
                     <div class="button" style="border:none">
@@ -41,6 +41,6 @@
             </div>
         </div>
     </div>
-<script src="../JS/login.js"></script>
+<script src="./login.js"></script>
 </body>
 </html>
