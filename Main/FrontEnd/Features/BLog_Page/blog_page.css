@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    width: 3vh;
+    height: 1.5vh;
+    color: black;
+    background-color: black;
+}
+body{
+    background-image: linear-gradient(to bottom right,white,#502274);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light-purple);
+    height: 100vh;
+    overflow: hidden;
+}
+.hmb{
+    height: 4vh;
+    display: block;
+}
+.navbar{
+    padding: 1.5vh;
+}
+.option{
+    display: none;
+    height: auto;
+    border-radius: 15px;
+    width: 25vh;
+    font-size: 5vh;
+    padding-top: 3vh;
+    background-color: white;
+    transform: ease 1s;
+}
+.option>div{
+    padding: 1vh;
+    color: var(--light-purple);
+    margin: 1vh;
+}
+.option>img{
+    height: 5vh;
+    position: absolute;
+    top: 2vh;
+    left: 20vh;
+}
+.option>div:hover{
+    color: white;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, rgb(182, 122, 210),#502274);
+}
+.option>img:hover{
+    background-image: none;
+}
+
+.profile{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;   
+    background-image: linear-gradient(to bottom right,white,#502274);
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+}
+.profile>img{
+    height: 7vh;
+    width: 7vh;
+}
