@@ -1,48 +1,60 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-hr{
-    width: 3vh;
-    height: 1.5vh;
-    color: black;
-    background-color: black;
+h1{
+    text-align: center;
+    font-size: 4.5vh;
+    margin-top: 2vh
 }
 body{
     background-image: linear-gradient(to bottom right,white,#502274);
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat:repeat-y;
     background-size: cover;
     color: var(--light-purple);
     height: 100vh;
-    overflow: hidden;
 }
 .hmb{
+    filter: drop-shadow(0px 0px 8px #222);
+    position: fixed;
+    backdrop-filter:blur(1px);
     height: 4vh;
     display: block;
+    transition: ease-in-out 0.5s;
 }
 .navbar{
+    position: fixed;
+    top: 1vh;
+    left: 1vw;
+    border-radius: 10px;
     padding: 1.5vh;
+    transition: ease-in-out 0.5s;
+    z-index: 2;
 }
 .option{
     display: none;
+    position: fixed;
+    left: 2vh;
     height: auto;
     border-radius: 15px;
     width: 25vh;
-    font-size: 5vh;
+    font-size:200%;
     padding-top: 3vh;
-    background-color: white;
-    transform: ease 1s;
+    background-color: rgb(255, 255, 255);
+    transform: ease-in-out 0.5s;
 }
 .option>div{
     padding: 1vh;
-    color: var(--light-purple);
+    color: var(--dark-green);
     margin: 1vh;
 }
 .option>img{
     height: 5vh;
     position: absolute;
-    top: 2vh;
-    left: 20vh;
+    top: 0vh;
+    left: 18vh;
 }
 .option>div:hover{
     color: white;
@@ -58,11 +70,106 @@ body{
     width: 7vh;
     border-radius: 50%;   
     background-image: linear-gradient(to bottom right,white,#502274);
-    position: absolute;
+    position: fixed;
     right: 1vw;
     top: 1vh;
+    transition: ease-in-out 0.5s;
 }
 .profile>img{
+    filter: drop-shadow(0px 0px 8px #222);
+    position: fixed;
     height: 7vh;
     width: 7vh;
+}
+.posts{
+    transition: ease-in 0.5s;
+    z-index: 1;
+}
+.blogs>div{
+    background-color: white;
+    display: flex;
+    height: 25vh;
+    width: 80vw;
+    margin: 0.5vh 10vw;
+    border-radius: 15px;
+}
+.blogimage>img{
+    height: 23vh;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+.blogcontent{
+    background-image: linear-gradient(to bottom right,#502274,white);
+    border-radius: 15px;
+    font-size: 3vh;
+    overflow-x: auto;
+}
+.blogcontent>h1{
+    font-size: 4vh;
+    color: var(--light-yellow);
+}
+.blogimage,.blogcontent{
+    color: var(--dark-green);
+    padding: 1vh;
+    margin: 1vh;
+}
+#up{
+    font-size: 8vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.up{
+    position: fixed;
+    bottom: 1vh;
+    left: 0vh;
+    transition: ease-in-out 0.5s;
+}
+.up>a>img{
+    filter: drop-shadow(8px 0px 5px #222);
+    height: 7vh;
+    rotate: 90deg;
+    z-index: 3;
+}
+.bot{
+    position: fixed;
+    bottom: 1vh;
+    right: 0vh;
+    transition: ease-in-out 0.5s;
+}
+.bot>img{
+    filter: drop-shadow(0px 0px 8px #222);
+    height: 7vh;
+    z-index: 3;
+}
+.bot>iframe{
+    display: none;
+}
+@media screen  and (max-width:768px)  {
+    .blogs>div{
+        flex-direction: column;
+        max-height: 70vh;
+        height: auto;
+        width: 90vw;
+        margin: 0.5vh 5vw;
+    }
+    .blogimage{
+        text-align: center;
+    }
+    .blogimage>img{
+        
+        max-width: 90vw;
+    }
+    #up{
+        font-size: 10vw;
+    }
+    .up{
+        left: -1vh;
+    }
+    .up>a>img{
+        height: 6vh;
+    }
+    .blogcontent>h1{
+        font-size: 4vh;
+    }
+    
 }
