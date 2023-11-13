@@ -16,10 +16,14 @@ body{
     color: var(--light-purple);
     height: 100vh;
 }
+a{
+    text-decoration: none;
+}
 .hmb{
     filter: drop-shadow(0px 0px 8px #222);
     position: fixed;
     backdrop-filter:blur(1px);
+    top: 2vh;
     height: 4vh;
     display: block;
     transition: ease-in-out 0.5s;
@@ -55,6 +59,9 @@ body{
     position: absolute;
     top: 0vh;
     left: 18vh;
+}
+.option>div:hover>a{
+    color: white;
 }
 .option>div:hover{
     color: white;
@@ -121,12 +128,11 @@ body{
 .up{
     position: fixed;
     bottom: 1vh;
-    left: 0vh;
+    left: 1vh;
     transition: ease-in-out 0.5s;
 }
 .up>a>img{
     filter: drop-shadow(8px 0px 5px #222);
-    height: 7vh;
     rotate: 90deg;
     z-index: 3;
 }
@@ -160,13 +166,13 @@ body{
         max-width: 90vw;
     }
     #up{
-        font-size: 10vw;
+        font-size: 7vw;
     }
     .up{
         left: -1vh;
     }
     .up>a>img{
-        height: 6vh;
+        height: 4vh;
     }
     .blogcontent>h1{
         font-size: 4vh;

@@ -1,3 +1,7 @@
+function redirect() {
+  var selectedOption = document.getElementById("Calculator").value;
+    window.location.href = selectedOption;
+}
 function show(elmnt) {
   document.getElementById(elmnt).style.display = "block";
 }

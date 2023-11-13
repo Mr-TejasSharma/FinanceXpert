@@ -16,6 +16,11 @@ let interest = interestRate / 12 / 100;
 
 let myChart;
 
+function redirect() {
+  var selectedOption = document.getElementById("Calculator").value;
+    window.location.href = selectedOption;
+}
+
 const checkValues = () => {
   let loanAmountValue = loanAmountInput.value;
   let interestRateValue = interestRateInput.value;

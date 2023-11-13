@@ -7,6 +7,7 @@ var background =document.querySelector(".posts");
 var up=document.querySelector(".up");
 var botimg=document.querySelector(".bot");
 
+
 function blurbg(value)
 {
     background.style.filter=`blur(${value}px)`;
