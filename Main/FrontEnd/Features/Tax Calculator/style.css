@@ -1,61 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  background-color: ;
+}
 #outer {
   width: 90%;
   max-width: 600px;
-  background: #fff;
   margin: 0 auto;
+  font-family: inter;
 }
 #cover {
-  border: 2px solid #111;
   padding: 15px 0;
 }
 .main {
   table-layout: fixed;
-  width: 94%;
+  width: 100%;
   border: 0;
   border-collapse: collapse;
   margin: 0 auto;
+  font-family: inter;
 }
 .main td {
-  padding: 0 8px;
+  padding: 8px 8px;
   vertical-align: middle;
   border: 0;
+  font-family: inter;
+  color: rgb(10, 10, 38);
+  font-weight: 700;
+}
+
+.main td:hover {
+  color: #f06543;
+  font-weight: 700;
 }
 .main input {
   width: 100%;
   border: 1px solid #ccc;
-  margin: 2px 0;
-  padding: 0 2%;
+  margin: 2px -10px;
+  padding: 5px;
   height: 22px;
-  text-align: right;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.main input:hover {
+  border: 1px solid #f06543;
 }
 .ac {
   text-align: center;
+  font-family: inter;
+  color: #502274;
+  
 }
 .b {
   font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 10px;
 }
 .main select {
   width: 100%;
-  border: 1px solid #ccc;
-  margin: 2px 0;
-  background: #fff;
+  height: 100%;
+  border: 1px solid rgb(10, 10, 38);
+  margin: 2px -10px;
+  color: rgb(10, 10, 38);
   height: 22px;
+  border-radius: 5px;
+}
+
+.main select:hover {
+  border: 1px solid #f06543;
+  color: #f06543;
+}
+
+.main select option{
+  color: rgb(10, 10, 38);
+  border-radius: 0px;
 }
 .w50 {
   width: 50%;
+  background: rgb(10, 10, 38);
+  
 }
 .main button {
   width: 100%;
   font-weight: bold;
+  font-family: inter;
+  color: #fbfbfb;
   margin: 3px 0;
+  padding: 5px 0;
+  border: 0.5px solid;
+  border-radius: 10px;
+  background: #248232;
 }
 
 .drop-down {
   width: 30%;
   align-items: center;
   justify-content: center;
-  height: 20px;
+  height: 30px;
   font-family: inter;
   font-weight: 500;
+  border-radius: 5px;
+  color: rgb(10, 10, 38);
+}
+
+.drop-down option{
+  color: rgb(10, 10, 38);
+  border-radius: 0px;
+}
+
+.drop-down:hover{
+  color: #f06543;
+  border-radius: 0px;
 }
